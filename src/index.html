@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Uber</title>
+  <link rel="shortcut icon" href="icons/uber_icon.png" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="css/bootstrap-grid.min.css">
@@ -22,9 +23,9 @@
       <div class="container">
         <ul class="menu">
           <li class="menu_item"><a href="#" class="menu_link">Главная</a></li>
-          <li class="menu_item"><a href="#" class="menu_link">Со своим автомобилем</a></li>
-          <li class="menu_item"><a href="#" class="menu_link">На автомобиле компании</a></li>
-          <li class="menu_item"><a href="#" class="menu_link">Требования</a></li>
+          <li class="menu_item"><a href="#your_car" class="menu_link">Со своим автомобилем</a></li>
+          <li class="menu_item"><a href="#company_auto" class="menu_link">На автомобиле компании</a></li>
+          <li class="menu_item"><a href="#requirement" class="menu_link">Требования</a></li>
           <li class="menu_item"><a href="#" class="menu_link">Контакты</a></li>
           <li class="menu_item"><a href="#" class="menu_link">Оставить заявку</a></li>
         </ul>
@@ -222,37 +223,37 @@
       </div>
 
       <div class="row">
-        <div class="col-4">
+        <div class="col-md-6 col-lg-4">
           <div class="mobile_item mobile_item_1">
             <div class="mobile_item_subtitle">оформление заказа одним касанием</div>
             <div class="mobile_item_plus"></div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-md-6 col-lg-4">
           <div class="mobile_item mobile_item_2">
             <div class="mobile_item_subtitle">надежная подача</div>
             <div class="mobile_item_plus"></div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-md-6 col-lg-4">
           <div class="mobile_item mobile_item_3">
             <div class="mobile_item_subtitle">прозрачные цены</div>
             <div class="mobile_item_plus"></div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-md-6 col-lg-4">
           <div class="mobile_item mobile_item_4">
             <div class="mobile_item_subtitle">безналичная оплата</div>
             <div class="mobile_item_plus"></div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-md-6 col-lg-4">
           <div class="mobile_item mobile_item_5">
             <div class="mobile_item_subtitle">обратная связь</div>
             <div class="mobile_item_plus"></div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-md-6 col-lg-4">
           <div class="mobile_item mobile_item_6">
             <div class="mobile_item_subtitle">разделить стоимость поездки</div>
             <div class="mobile_item_plus"></div>
@@ -268,8 +269,8 @@
     <div class="container">
       <div class="black"></div>
       <div class="label label_white">возможности</div>
-      <h2 class="title title_white">Выбор - отличная штука!</h2>
-      <div class="subtitle subtitle_white">Закажите автомобиль, который подходит вам по стилю и бюджету</div>
+      <h2 class="title title_white hidden-320">Выбор - отличная штука!</h2>
+      <div class="subtitle subtitle_white hidden-320">Закажите автомобиль, который подходит вам по стилю и бюджету</div>
       <img src="img/car.png" alt="uber car" class="choice_img">
       <div class="choice_descr">
         Машины на каждый день.<br>
@@ -283,9 +284,9 @@
       <div class="label">возможности</div>
       <div class="title">условия и требования</div>
       <div class="row">
-        <div class="col-6">
+        <div class="col-md-6">
           <div class="require_block">
-            <div class="require_title">УСЛОВИЯ: со своим авто:</div>
+            <div class="require_title" id="your_car">УСЛОВИЯ: со своим авто:</div>
             <ul class="require_list">
               <li>Подключаем к системе UBER под 10%.</li>
               <li>Ни каких взносов 0%!</li>
@@ -301,9 +302,9 @@
         </div>
 
 
-        <div class="col-6">
+        <div class="col-md-6">
           <div class="require_block">
-            <div class="require_title">УСЛОВИЯ: на авто компании:</div>
+            <div class="require_title" id="company_auto">УСЛОВИЯ: на авто компании:</div>
             <ul class="require_list">
               <li>Предоставляем авто без залога</li>
               <li>Без ежедневных выплат по аренде</li>
@@ -312,9 +313,9 @@
           </div>
         </div>
 
-        <div class="col-6">
+        <div class="col-md-6">
           <div class="require_block require_block_nmb warning">
-            <div class="require_title">ТРЕБОВАНИЕ:</div>
+            <div class="require_title" id="requirement">ТРЕБОВАНИЕ:</div>
             <ul class="require_list">
               <li>Наличие автомобиля без рекламы</li>
               <li>Автомобиль не должен быть желтый и не с желтыми номерами</li>
@@ -326,7 +327,7 @@
         </div>
 
 
-        <div class="col-6">
+        <div class="col-md-6">
           <div class="require_block require_block_nmb warning">
             <div class="require_title">ДОКУМЕНТЫ:</div>
             <ul class="require_list">
